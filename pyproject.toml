@@ -3,12 +3,12 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "dice_themadpunter"
-version = "0.0.1"
+name = "puntdice"
+version = "1.0.3"
 authors = [
-  { name="Example Author", email="author@example.com" },
+  { name="Themadpunter", email="themadpunter@proton.me" },
 ]
-description = "A small example package"
+description = "A Python dice roller command line utility and module."
 readme = "README.md"
 requires-python = ">=3.6"
 classifiers = [
@@ -16,6 +16,8 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
-
 [project.urls]
 Homepage = "https://github.com/familycomicsstudios/dice"
+
+[project.scripts]
+dice = "dice:main"
